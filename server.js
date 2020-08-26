@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
     res.json("hello");
 });
 
-app.use('/api/users/', require("./routes/api/users"));
+app.use('/api/users/', require('./routes/api/user'));
 
 app.listen(PORT, () => {
     console.log(`Server is up and running on port ${PORT}`);
